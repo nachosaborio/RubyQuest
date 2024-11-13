@@ -1,4 +1,5 @@
 obj_control_lvl1.gameover = true;
+status = STATE.GAMEOVERWALKING1;
 highscore_add("",score); //game maker studio handles highscores differently than gm 8.1
 //reset the score
 score = 0;

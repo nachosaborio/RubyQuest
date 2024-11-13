@@ -1,4 +1,12 @@
+enum STATE{
+	WALKING,
+	JUMP,
+	GAMEOVERWALKING1,
+	GAMEOVERWALKING2
+}
+
 grv=1.2;
 vsp=0;
 dead=0;
 
+status = STATE.WALKING;

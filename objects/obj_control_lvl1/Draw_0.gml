@@ -7,4 +7,4 @@ draw_text(room_width/2,50,"Best Score : "+ string(highscore_value(1)));
 //draw the score
 draw_text(room_width/2,100,"Score : "+string(score));
 //draw the bacons
-draw_text(room_width/2,200,"Bacons : "+string(bacons));
+draw_text(room_width/2,150,"Bacons : "+string(bacons));
