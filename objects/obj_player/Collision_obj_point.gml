@@ -7,18 +7,9 @@ if(dead == 0)  //if the Dino is still alive
     }
     //increase the score
     score += 1;
-    if (score>20) 
+    if (score % 10 == 0) 
     {
-    global.hs=9;
-    }
-    if (score>60)
-    {
-    global.hs=15;
-    global.al=30;
-    }
-    if(score>90)
-    {
-    global.hs=18;
-    global.al=30;
+    global.hs += 2;
+	global.al=45;
     }
 }

@@ -5,8 +5,17 @@ if(!obj_control_lvl1.gameover){
 	}	
 }
 else{
-	
-	y = obj_floor.y;
+	if(status == STATE.GAMEOVERWALKING1 || status == STATE.GAMEOVERWALKING2){
+		y = obj_floor.y;
+	}
+	else if((status == STATE.GAMEOVERFLY1 || status == STATE.GAMEOVERFLY2)){
+		if(!place_meeting(x,y,obj_floor)){
+			vsp = vsp+grv;
+		}
+		else{
+			y = obj_floor.y; 
+		}
+	}
 }
 
 
@@ -22,6 +31,12 @@ switch(status){
 		break;
 	case STATE.GAMEOVERWALKING2:
 		sprite_index = spr_ruby_gameover2;
+		break;
+	case STATE.GAMEOVERFLY1:
+		scr_gameover_fly1();
+		break;
+	case STATE.GAMEOVERFLY2:
+		sprite_index = spr_ruby_gameover_zombie_fly2;
 		break;
 }
 y = y + vsp;
