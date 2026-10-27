@@ -8,7 +8,8 @@ else{
 	if(status == STATE.GAMEOVERWALKING1 || status == STATE.GAMEOVERWALKING2){
 		y = obj_floor.y;
 	}
-	else if((status == STATE.GAMEOVERFLY1 || status == STATE.GAMEOVERFLY2)){
+	else if(status == STATE.GAMEOVERFLY1 || status == STATE.GAMEOVERFLY2
+			|| status == STATE.GAMEOVERWALKING1 || status == STATE.GAMEOVERWALKING2){
 		if(!place_meeting(x,y,obj_floor)){
 			vsp = vsp+grv;
 		}

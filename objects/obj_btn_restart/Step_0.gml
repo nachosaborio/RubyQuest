@@ -1,0 +1,1 @@
+visible = obj_control_lvl1.gameover ? true : false;

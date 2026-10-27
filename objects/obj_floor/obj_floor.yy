@@ -35,5 +35,5 @@
     "name":"spr_floor",
     "path":"sprites/spr_floor/spr_floor.yy",
   },
-  "visible":true,
+  "visible":false,
 }

@@ -11,5 +11,6 @@ if(dead == 0)  //if the Dino is still alive
     {
     global.hs += 2;
 	global.al=45;
+	grv += 0.1;
     }
 }
